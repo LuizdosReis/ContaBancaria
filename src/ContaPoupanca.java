@@ -1,7 +1,7 @@
 
 public class ContaPoupanca extends Conta{
 	
-	public void deposita(double valor){
+	public void deposita(double valor) throws ValorInvalidoException{
 		valor -= 0.10;
 		super.deposita(valor);
 	}

@@ -2,7 +2,11 @@
 public class Principal {
 	public static void main(String[] args) {
 		Conta conta = new ContaPoupanca();
-		conta.deposita(100.0);
+		try {
+			conta.deposita(100.0);
+		} catch (ValorInvalidoException e) {
+			System.out.println(e.getMessage());
+		}
 		System.out.println(conta.getSaldo());
 		
 		GerenciadorDeImpostoDeRenda g = new GerenciadorDeImpostoDeRenda();
@@ -11,10 +15,14 @@ public class Principal {
 		g.adiciona(seguroDeVida);
 
 		ContaCorrente contaCorrente = new ContaCorrente();
-		contaCorrente.deposita(1000);
+		try {
+			contaCorrente.deposita(1000);
+		} catch (ValorInvalidoException e) {
+			System.out.println(e.getMessage());
+		}
 		g.adiciona(contaCorrente);
 		
-		System.out.printf("O saldo é: %2f,2d",g.getTotal());
+		System.out.printf("O saldo é: %.2f",g.getTotal());
 		
 		
 	}
