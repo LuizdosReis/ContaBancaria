@@ -1,8 +1,8 @@
-
+package br.caleum.orientacaoobjetos.banco.conta;
 public class GerenciadorDeImpostoDeRenda {
 	private double total;
 
-	void adiciona(Tributavel t){
+	public void adiciona(Tributavel t){
 		this.total += t.calculaTributaveis();
 	}
 

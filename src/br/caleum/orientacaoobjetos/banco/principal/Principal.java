@@ -1,3 +1,11 @@
+package br.caleum.orientacaoobjetos.banco.principal;
+
+import br.caleum.orientacaoobjetos.banco.conta.Conta;
+import br.caleum.orientacaoobjetos.banco.conta.ContaCorrente;
+import br.caleum.orientacaoobjetos.banco.conta.ContaPoupanca;
+import br.caleum.orientacaoobjetos.banco.conta.GerenciadorDeImpostoDeRenda;
+import br.caleum.orientacaoobjetos.banco.conta.SeguroDeVida;
+import br.caleum.orientacaoobjetos.banco.excecao.ValorInvalidoException;
 
 public class Principal {
 	public static void main(String[] args) {

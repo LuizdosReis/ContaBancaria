@@ -1,3 +1,5 @@
+package br.caleum.orientacaoobjetos.banco.conta;
+import br.caleum.orientacaoobjetos.banco.excecao.ValorInvalidoException;
 
 public class ContaPoupanca extends Conta{
 	

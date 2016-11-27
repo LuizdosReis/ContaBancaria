@@ -1,3 +1,7 @@
+package br.caleum.orientacaoobjetos.banco.principal;
+import br.caleum.orientacaoobjetos.banco.conta.Conta;
+import br.caleum.orientacaoobjetos.banco.conta.ContaCorrente;
+import br.caleum.orientacaoobjetos.banco.excecao.ValorInvalidoException;
 
 public class TesteDeposita {
 	public static void main(String[] args) {

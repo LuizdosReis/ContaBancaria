@@ -1,3 +1,6 @@
+package br.caleum.orientacaoobjetos.banco.sistema;
+
+import br.caleum.orientacaoobjetos.banco.conta.Conta;
 
 public class AtualizadorDeContas {
 	private double saldoTotal = 0;
