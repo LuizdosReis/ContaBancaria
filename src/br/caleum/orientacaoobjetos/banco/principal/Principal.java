@@ -9,7 +9,7 @@ import br.caleum.orientacaoobjetos.banco.excecao.ValorInvalidoException;
 
 public class Principal {
 	public static void main(String[] args) {
-		Conta conta = new ContaPoupanca();
+		Conta conta = new ContaPoupanca(0);
 		try {
 			conta.deposita(100.0);
 		} catch (ValorInvalidoException e) {
@@ -22,7 +22,7 @@ public class Principal {
 		SeguroDeVida seguroDeVida = new SeguroDeVida();
 		g.adiciona(seguroDeVida);
 
-		ContaCorrente contaCorrente = new ContaCorrente();
+		ContaCorrente contaCorrente = new ContaCorrente(0);
 		try {
 			contaCorrente.deposita(1000);
 		} catch (ValorInvalidoException e) {

@@ -12,7 +12,7 @@ import br.caleum.orientacaoobjetos.banco.excecao.ValorInvalidoException;
 
 public class TesteDeposita {
 	public static void main(String[] args) {
-		Conta cp = new ContaCorrente();
+		Conta cp = new ContaCorrente(0);
 		try {
 			cp.deposita(-100);
 		} catch (ValorInvalidoException e) {

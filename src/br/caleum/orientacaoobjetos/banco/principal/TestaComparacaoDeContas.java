@@ -6,8 +6,8 @@ import br.caleum.orientacaoobjetos.banco.conta.ContaPoupanca;
 
 public class TestaComparacaoDeContas {
 	public static void main(String[] args) {
-		ContaCorrente contaCorrente = new ContaCorrente();
-		Conta contaPoupanca = new ContaPoupanca();
+		ContaCorrente contaCorrente = new ContaCorrente(0);
+		Conta contaPoupanca = new ContaPoupanca(0);
 		
 		contaCorrente.setNome("luiz");
 		

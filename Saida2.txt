@@ -1,0 +1,2 @@
+lendo do console
+e salvando no arquivo de saida

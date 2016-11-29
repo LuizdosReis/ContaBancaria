@@ -3,8 +3,12 @@ import br.caleum.orientacaoobjetos.banco.excecao.ValorInvalidoException;
 
 public abstract class Conta {
 	protected double saldo;
-	private int numero;
+	protected int numero;
 	private String nome;
+	
+	public Conta(double saldo) {
+		this.saldo = saldo;
+	}
 
 	public double getSaldo(){
 		return this.saldo;
@@ -26,13 +30,29 @@ public abstract class Conta {
 	
 	@Override
 	public String toString() {
-		return "esse objeto é uma conta com saldo R$" + this.saldo;
+		return "Conta "+this.nome+" Saldo "+this.saldo;
 	}
 	
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + numero;
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
-		Conta c = (Conta) obj;
-		return this.numero == c.numero && this.nome.equals(c.nome);
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Conta other = (Conta) obj;
+		if (numero != other.numero)
+			return false;
+		return true;
 	}
 	
 	public int getNumero() {

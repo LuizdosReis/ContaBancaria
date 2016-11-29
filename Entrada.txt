@@ -1,0 +1,3 @@
+lendo do arquivo de entrada
+lendo segunda linha
+lendo terceira linha
