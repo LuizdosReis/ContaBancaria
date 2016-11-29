@@ -30,7 +30,9 @@ public class Principal {
 		}
 		g.adiciona(contaCorrente);
 		
-		System.out.printf("O saldo é: %.2f",g.getTotal());
+		System.out.printf("O saldo é: %.2f \n",g.getTotal());
+		
+		System.out.println(conta);
 		
 		
 	}
